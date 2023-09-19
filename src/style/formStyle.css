@@ -1,0 +1,115 @@
+.todo-form{
+    flex: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-title {
+    position: relative;
+}
+
+.form-title{
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.form-title::before {
+    border-left: none;
+    border-top: none;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.todo-mode{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ant-table-tbody{
+    height: 335px;
+}
+.custom-input:focus {
+    border-color: #11de33;
+}
+.custom-input:hover {
+    border-color: #11de33;
+}
+.custom-input::placeholder {
+    color: #c6c6c6;
+}
+
+.dark .ant-select-selector {
+    background-color: #323234 !important; /* Устанавливаем желаемый цвет фона для выбранного элемента */
+}
+.dark .ant-select-selector:hover {
+    border-color: #11de33;
+
+}
+.light .ant-select-selector {
+    background-color: #fff !important; /* Устанавливаем желаемый цвет фона для выбранного элемента */
+}
+
+/* CustomCheckbox.css */
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #11de33;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-box svg {
+    display: none;
+}
+
+.custom-checkbox.checked .checkbox-box {
+    background-color: #11de33;
+    border-color: #11de33;
+}
+
+.custom-checkbox.checked .checkbox-box svg {
+    display: block;
+}
+
+.ant-select-selector:hover{
+    border: 1px solid #35d713 !important;
+}
+
+.ant-select-selector::placeholder{
+    color: #fff !important;
+}
+
+.dark .ant-select-selector{
+    color: #fff !important;
+}
+
+.ant-select-focused{
+    border: 1px solid #35d713 !important;
+}
+
+.dark::placeholder{
+    color: #fff !important;
+}
+
+.dark .ant-select-selection-placeholder {
+    color: #f0f0f0 !important;
+}
